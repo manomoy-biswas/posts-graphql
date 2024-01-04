@@ -14,6 +14,7 @@ An example GraphQL query might look like:
 
 
 ### Index Query
+```
 {
   users {
     name
@@ -25,8 +26,10 @@ An example GraphQL query might look like:
     }
   }
 }
+```
 
 ### Show Query
+```
 {
   user(id: 1){
     name
@@ -39,8 +42,10 @@ An example GraphQL query might look like:
     }
   }
 }
+```
 
 ### Create User
+```
 mutation {
   createUser(input: {name: "Yadavalli Santosh", email: "santosh@gmail.com"}){
     user{
@@ -50,8 +55,10 @@ mutation {
     }
   }
 }
+```
 
 ### Update User
+```
 mutation{
   updateUser(input: {id: 8, name: "Madhurima Biswas", email: "manomoy@example.com"}){
     user{
@@ -61,9 +68,11 @@ mutation{
     }
   }
 }
+```
 
 ### Create Post
 
+```
 mutation{
   createPost(input: {id: 8, title: "Facebook Post", body: "Lorem ipsum kudo elas judo param thuy hujoki"}){
     user{
@@ -84,3 +93,4 @@ mutation{
       }
   }
 }
+```
